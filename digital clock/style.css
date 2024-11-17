@@ -1,0 +1,34 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.clock {
+  font-size: 10vw; /* Font size will scale with viewport width */
+  color: #fff;
+  background: #444;
+  padding: 5vw 10vw; /* Padding is relative to viewport width */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Additional responsive behavior */
+@media (max-width: 768px) {
+  .clock {
+    font-size: 12vw; /* Larger font for tablets */
+    padding: 7vw 12vw; /* Adjust padding for smaller devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .clock {
+    font-size: 16vw; /* Even larger font for small screens */
+    padding: 10vw 15vw; /* Adjust padding accordingly */
+  }
+}
